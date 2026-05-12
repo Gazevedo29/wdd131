@@ -1,0 +1,243 @@
+/*=====RESET BASICO=====*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*=====VARIAVEIS DE COR=====*/
+:root{
+    --primary-color: #1a5276; /*azul escuro, para o Header e Footer*/
+    --nav-bg: #333333; /* cinza para navegacao*/
+    --text-color: #333333; /*cor do texto principall*/
+    --wrhite: #ffffff;
+    --card-borer: #cccccc;
+    --link-color: #0000ee; /*cor padrao do link*/
+}
+
+/*=======tipografia=======*/
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: var(--text-color);   /* ← ADICIONAR ; AQUI */
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+/*=========header==*/
+header{
+    background-color:var(--primary-color);
+    color:var(--wrhite);
+    text-align:center;
+}
+
+#course-title{
+    display: block;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+/*===========navegacao============*/
+nav{
+display: flex;
+justify-content: space-around;
+background-color: var(--nav-bg);
+padding: 0;
+}
+
+nav a{
+    color: var(--wrhite);
+    text-decoration: none;
+    padding:12px 20px;
+    font-size:1rem;
+    transition: background-color 0.3s ease;
+    flex:1;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color:var(--primary-color);
+    color:var(--wrhite)
+}
+
+/*main===========MAIN=========*/
+main{
+    max: width 900px;
+    margin:0 auto;
+    padding: 20px;
+
+}
+
+main h1{
+    text-align: center;
+    font-size:2rem;
+    margin: bottom 20px;
+    color:var(--text-color);
+
+}
+
+/*========cards com CSS grid==============*/
+.cards-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    border: 1px solid var(--card-borer);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color:var(--wrhite)
+}
+
+.card h2{
+    background-color:var(--primary-color);
+    color:var(--wrhite);
+    text-align: center;
+    padding: 12px;
+    font: size 1.1em;
+    font-weight:700;
+
+}
+
+.card-content{
+    padding:20px;
+
+}
+
+/*=======card sobre mim======*/
+.about-text{
+    flex:1;
+
+}
+
+.about-text > p:first-child {
+    margin-bottom:15px;
+}
+
+.about-text h3{
+    text-align: center;
+    font-size:1.1rem;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.about-text hr{
+    border:none;
+    border-top: 1px solid var(--card-borer);
+    margin-bottom:15px;
+
+}
+
+/*====texto e foto lado a lado=======*/
+.card:first-child .card-content{
+    display: flex;
+    gap:20px;
+
+}
+.profile-img{
+    width:150px;
+    height:190px;
+    object-fit: cover;
+    border:1px solid var(--card-borer);
+
+}
+
+/*=======bandeira de moz=========*/
+.flag-section{
+    display: flex;
+    gap:15px;
+    align-items: flex-start;
+
+}
+
+.flag-section figure {
+    text-align: center;
+    flex: shrink 0;
+}
+
+.flag {
+    width:120px;
+    height:80px;
+    border:1px solid var(--card-borer);
+    display: block;
+}
+
+.flag-section figcaption{
+    font-size:0.75rem;
+    font-style: italic;
+    margin-top: 5px;
+    color: var(--text-color);
+}
+
+.flag-section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/*=====recursos do cartao=====*/
+.resources{
+    padding: 30px 20px;
+
+}
+
+.resources ul{
+    list-style-type: disc;
+    padding-left: 25px;
+
+}
+
+.resources li {
+margin-bottom: 8px;
+
+}
+
+.resources a{
+    color: var(--link-color);
+    text-decoration: underline;
+
+}
+
+.resources a:hover{
+    color: #000080;
+}
+
+/*===========Footer================*/
+footer{
+    background-color: var(--primary-color);
+    color: var(--wrhite);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p{
+    margin: 5px 0;
+    font-size: 0.9rem;
+
+}
+
+#lastModified {
+    color: #ffff00; /*data de modificacao*/
+    font-size: 1rem;
+}
+
+/*=========responividade===========*/
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card:first-child .card-content{
+        flex-direction: column;
+    }
+
+    .profile-img{
+        align-self: center;
+    }
+
+    nav {
+        flex: 1 1 50%;
+    }
+}

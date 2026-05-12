@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>
+        WDD 131 - Dynamic Web Fundamentals - Gerson A. Azevedo
+    </title>
+    <meta name=description" content="WDD 131 Dynamic Web Fundamentals. Gerson A. Azevedo. Home page with personal information and web development resources.">
+    <meta name="author" content="Gerson A. Azevedo">
+
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!--JavaScript-->
+    <script src="scripts/getdates.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://linkedin.com">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">final project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            Gerson A. Azevedo
+        </h1>
+
+        <div class="cards-container">
+            <!--card 1: about Me-->
+            <section class="card">
+                <h2>
+                    About Me
+                </h2>
+                <div class="card-content">
+                    <div class="about-text">
+                        <p>
+                            My name is Gerson but I like to be called Azevedo. I was born in Mozambique and it's where I live now. I am currently studying Web and Software Development at BYU. I love playing Guitar and Piano! I have always been fascinated by medicine and dream of combining technology with healthcare one day. Music is my escape — I enjoy everything from classical compositions to modern Afrobeat rhythms. When I am not coding or strumming chords, you will find me binge-watching medical dramas and sci-fi series on streaming platforms. I believe that good storytelling, whether in a song or a TV show, teaches us empathy and new perspectives. My ultimate goal is to build digital solutions that make a real difference in people's lives.
+                        </p>
+
+                        <h3>
+                            Beira, Mozambique
+                        </h3>
+
+                        <hr>
+                        <div class="flag-section">
+                            <figure>
+                                <img src="images/moz_flag.png" alt="Official flag of Mozambiqque" class="flag">
+                                <figcaption>
+                                    Official Flag of Mozambique
+                                </figcaption>
+                            </figure>
+                            <p>
+                             Mozambique is scenic Southeast African nation renowned for its 2,400+Km Indian Ocean coastline, rich marine biodivesity, and vibrant cultural fusion of Bantu, Arab, and Portuguese influences. Capitalized by Maputo, this fomer Portuguese colony is a developing tropical destination Known for white sand beaches, seafood, and a growing tourism industry.
+                            </p>
+                        </div>
+
+                    </div>
+                    <img src="images/profile_photo.jpg" alt="Gerson A. Azevedo" class="profile-img">
+                </div>
+            </section>
+
+            <!--card 2: web dev resources-->
+            <section class="card">
+                <h2>
+                    Web Dev Resources
+                </h2>
+                <div class="card-content resources">
+                    <ul>
+                        <li>
+                            <a href="https://dev.to">Devto Community</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://smashingmagazine.com">Smashing Magazine</a>
+                        </li>
+
+                        <li>
+                            <a href="https://css-tricks.com">CSS Tricks</a>
+                        </li>
+
+                        <li>
+                            <a href="https://w3schools.com">W3 Schools</a>
+                        </li>
+
+                        <li>
+                            <a href="https://udemy.com">Udemy</a>
+                        </li>
+
+                        <li>
+                            <a href="https://lorempicsum.com">Lorem Picsum Image Placeholder</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            ©<span id="currentyear"></span>🎧Gerson de Alcina Azevedo🎧Mozambique
+        </p>
+         <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
