@@ -28,6 +28,8 @@ header{
     background-color:var(--primary-color);
     color:var(--wrhite);
     text-align:center;
+    max-width: 900px;
+    margin:0 auto;
 }
 
 #course-title{
@@ -44,6 +46,8 @@ display: flex;
 justify-content: space-around;
 background-color: var(--nav-bg);
 padding: 0;
+max-width: 900px;
+margin:0 auto;
 }
 
 nav a{
@@ -74,6 +78,8 @@ main h1{
     font-size:2rem;
     margin-bottom:  20px;
     color:var(--text-color);
+    font-family: 'Georgia', serif;
+    font-weight: normal;
 
 }
 
@@ -82,6 +88,8 @@ main h1{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
+    max-width: 900px;
+    margin:0 auto;
 }
 
 .card {
@@ -138,7 +146,7 @@ main h1{
 }
 .profile-img{
     width:150px;
-    height:190px;
+    height:150px;
     object-fit: cover;
     border:1px solid var(--card-borer);
 
@@ -210,6 +218,9 @@ footer{
     text-align: center;
     padding: 15px;
     margin-top: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer p{
