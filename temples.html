@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        WDD 131 - Dynamic Web Fundamentals - Gerson A. Azevedo
+    </title>
+    <meta name="description" content="Gerson A. Azevedo - WDD 131 Dynamic Web Fundamentals. Personal page with web development resources and background from Beira, Mozambique.">
+    <meta name="author" content="Gerson A. Azevedo">
+
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!--CSS mobile first and desktop-->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+
+    <!--JavaScript-->
+    <script src="scripts/temples.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+       <h1>Temple Album</h1>
+         <nav>
+                <a href="index.html">Home</a>
+                <a href="temples.html?filter=old">Old</a>
+                <a href="temples.html?filter=new">New</a>
+                <a href="temples.html?filter=large">Large</a>
+                <a href="temples.html?filter=small">Small</a>
+          </nav>
+    </header>
+
+    <main>
+
+        <h1>Temple Gallery</h1>
+        
+        <!-- 9 temple pictures -->
+        <div class="gallery">
+            <img src="images/Lisbon-Portugal-Temple.jpg" alt="Lisbon Portugal Temple"> <figcaption>Lisbon Portugal Temple</figcaption>
+            <img src="images/Templo de Boston Massachusetts.jpg" alt="Boston Massachusetts Temple"> <figcaption>Boston Massachusetts Temple</figcaption>
+            <img src="images/Templo de Bountiful Utah.jpg" alt="Bountiful Utah Temple"> <figcaption>Bountiful Utah Temple</figcaption>
+            <img src="images/Templo de Fort Lauderdale Florida.jpg" alt="Fort Lauderdale Florida Temple"> <figcaption>Fort Lauderdale Florida Temple</figcaption>
+            <img src="images/Templo de Gilbert Arizona.jpg" alt="Gilbert Arizona Temple"> <figcaption>Gilbert Arizona Temple</figcaption>
+            <img src="images/Templo de Laie Hawaii.jpg" alt="Laie Hawaii Temple"> <figcaption>Laie Hawaii Temple</figcaption>
+            <img src="images/Templo de Oquirrh Mountain, Utah.jpg" alt="Oquirrh Mountain, Utah Temple"> <figcaption>Oquirrh Mountain, Utah Temple</figcaption>
+            <img src="images/Templo de San Diego California.jpg" alt="San Diego California Temple"> <figcaption>San Diego California Temple</figcaption>
+            <img src="images/cape-verde-temple.jpg" alt="Cape Verde Temple"> <figcaption>Cape Verde Temple</figcaption>
+        </div>
+    </main>
+
+    
+
+    <footer>
+        <p>
+            ©<span id="currentyear"></span>🎧Gerson de Alcina Azevedo🎧Mozambique
+        </p>
+         <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
