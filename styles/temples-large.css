@@ -21,7 +21,7 @@
     
     /* ========== GRID DESKTOP: 3 COLUNAS × 3 LINHAS ========== */
     .gallery {
-        grid-template-columns: repeat(3, 1fr);   /* 3 colunas iguais */
-        grid-template-rows: repeat(3, 1fr);        /* 3 linhas iguais */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }

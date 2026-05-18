@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-/* ========== GOOGLE FONT ========== */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 /* ========== VARIÁVEIS DE COR ========== */
 :root {
     --primary-color: #1a5276;
@@ -92,7 +89,7 @@ main h1 {
 /* ========== GRID MOBILE: 1 COLUNA ========== */
 .gallery {
     display: grid;
-    grid-template-columns: 1fr;      /* 1 coluna no mobile */
+    grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
@@ -116,10 +113,8 @@ figcaption {
     color: var(--primary-color);
 }
 
-
-
 /*===========Footer================*/
-footer{
+footer {
     background-color: var(--primary-color);
     color: var(--white);
     text-align: center;
@@ -130,13 +125,12 @@ footer{
     margin-right: auto;
 }
 
-footer p{
+footer p {
     margin: 5px 0;
     font-size: 0.9rem;
-
 }
 
 #lastModified {
-    color: #ffff00; /*data de modificacao*/
+    color: #ffff00;
     font-size: 1rem;
 }
