@@ -1,6 +1,11 @@
 // ========== FOOTER DINÂMICO ==========
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
+// temples.js
+
+// 1. Preencher o ano atual no copyright
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+// 2. Preencher a data da última modificação
+document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
 
 // ========== MENU HAMBÚRGUER ==========
 const menuToggle = document.getElementById('menu-toggle');
