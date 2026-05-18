@@ -1,61 +1,27 @@
-/*=====RESET BASICO=====*/
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-/*=====VARIAVEIS DE COR=====*/
-:root{
-    --primary-color: #1a5276; /*azul escuro, para o Header e Footer*/
-    --nav-bg: #333333; /* cinza para navegacao*/
-    --text-color: #333333; /*cor do texto principall*/
-    --white: #ffffff;
-    --card-borer: #cccccc;
-    --link-color: #0000ee; /*cor padrao do link*/
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*===========Footer================*/
-footer{
-    background-color: var(--primary-color);
-    color: var(--white);
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-    max-width: 1800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer p{
-    margin: 5px 0;
-    font-size: 0.9rem;
-
-}
-
-#lastModified {
-    color: #ffff00; /*data de modificacao*/
-    font-size: 1rem;
+/* ========== DESKTOP (a partir de 768px) ========== */
+@media screen and (min-width: 768px) {
+    
+    /* Esconde botão hambúrguer no desktop */
+    #menu-toggle {
+        display: none;
+    }
+    
+    /* Navegação horizontal no desktop */
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+    }
+    
+    nav a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+    }
+    
+    /* ========== GRID DESKTOP: 3 COLUNAS × 3 LINHAS ========== */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);   /* 3 colunas iguais */
+        grid-template-rows: repeat(3, 1fr);        /* 3 linhas iguais */
+    }
 }

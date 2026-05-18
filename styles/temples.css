@@ -1,39 +1,120 @@
-/*=====RESET BASICO=====*/
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*=====VARIAVEIS DE COR=====*/
-:root{
-    --primary-color: #1a5276; /*azul escuro, para o Header e Footer*/
-    --nav-bg: #333333; /* cinza para navegacao*/
-    --text-color: #333333; /*cor do texto principall*/
+/* ========== GOOGLE FONT ========== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ========== VARIÁVEIS DE COR ========== */
+:root {
+    --primary-color: #1a5276;
+    --nav-bg: #333333;
+    --text-color: #333333;
     --white: #ffffff;
-    --card-borer: #cccccc;
-    --link-color: #0000ee; /*cor padrao do link*/
+    --card-border: #cccccc;
+    --link-color: #0000ee;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f5f5f5;
+}
 
+/* ========== HEADER ========== */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+header h1 {
+    font-size: 1.5rem;
+}
 
+/* ========== BOTÃO HAMBÚRGUER ========== */
+#menu-toggle {
+    background: none;
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
 
+/* ========== NAVEGAÇÃO (MOBILE) ========== */
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
 
+nav.open {
+    display: flex;
+}
 
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    transition: background-color 0.3s;
+}
 
+nav a:hover {
+    background-color: #34495e;
+}
 
+/* ========== MAIN ========== */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
+main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
 
+/* ========== GRID MOBILE: 1 COLUNA ========== */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;      /* 1 coluna no mobile */
+    gap: 1.5rem;
+}
 
+figure {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-
-
-
-
-
-
+figcaption {
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+}
 
 
 
