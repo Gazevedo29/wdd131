@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        WDD 131 - Dynamic Web Fundamentals - Gerson A. Azevedo
+    </title>
+    <meta name="description" content="Gerson A. Azevedo - WDD 131 Dynamic Web Fundamentals. Personal page with web development resources and background from Beira, Mozambique.">
+    <meta name="author" content="Gerson A. Azevedo">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--CSS mobile first and desktop-->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <!---------ipt----------------------->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+    <h1>Mozambique</h1>
+</header>
+
+<main>
+
+    <picture>
+        <!-- Imagem para telas grandes -->
+        <source srcset="images/place-large.webp" media="(min-width: 768px)">
+        <!-- Imagem para telas pequenas -->
+        <img src="images/place.webp" alt="Mozambique landscape 1">
+    </picture>
+
+    <section class="data">
+        <h2>Data</h2>
+
+        <p><strong>Area:</strong> 801,590 km²</p>
+        <p><strong>Population:</strong> 32 million</p>
+        <p><strong>Capital:</strong> Maputo</p>
+        <p><strong>Languages:</strong> Portuguese</p>
+        <p><strong>Currency:</strong> Metical</p>
+        <p><strong>Time Zone:</strong> UTC+2</p>
+    </section>
+
+    <section class="weather">
+        <h2>Weather</h2>
+
+        <img src="images/clima.svg" alt="weather icon">
+
+        <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+
+        <p><strong>Wind Speed:</strong> <span id="speed">10</span> km/h</p>
+
+        <p><strong>Wind Chill:</strong><span id="windchill"></span></p>
+    </section>
+
+</main>
+
+    <footer>
+        <p>
+            ©<span id="currentyear"></span>🎧Gerson de Alcina Azevedo🎧Mozambique
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
