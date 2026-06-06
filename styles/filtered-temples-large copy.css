@@ -1,0 +1,27 @@
+/* ========== DESKTOP (a partir de 768px) ========== */
+@media screen and (min-width: 768px) {
+    
+    /* Esconde botão hambúrguer no desktop */
+    #menu-toggle {
+        display: none;
+    }
+    
+    /* Navegação horizontal no desktop */
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+    }
+    
+    nav a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+    }
+    
+    /* ========== GRID DESKTOP: 3 COLUNAS × 3 LINHAS ========== */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
