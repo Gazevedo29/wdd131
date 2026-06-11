@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan document for Grand Canyon Adventures website project. Includes site purpose, target audience scenarios, color scheme, typography, and wireframes.">
+    <meta name="author" content="Gerson Azevedo">
     <title>Site Plan - Grand Canyon Adventures</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="styles/siteplan.css">
 </head>
 <body>
     <div class="container">
         <h1>Site Plan: Grand Canyon Adventures</h1>
 
-        <!-- Site Name Section -->
         <section id="site-name">
             <h2>Site Name</h2>
             <p><strong class="domain-note">Grand Canyon Adventures</strong></p>
@@ -23,11 +24,10 @@
             </div>
         </section>
 
-        <!-- Site Purpose Section -->
         <section id="site-purpose">
             <h2>Site Purpose</h2>
             <p>The Grand Canyon Adventures website serves as a comprehensive guide for visitors planning a trip to the Grand Canyon. The site provides:</p>
-            <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <ul class="purpose-list">
                 <li>Detailed information about the best viewpoints, hiking trails, and scenic routes</li>
                 <li>Weather updates and seasonal recommendations for optimal visiting times</li>
                 <li>Accommodation and camping options both inside and near the park</li>
@@ -37,7 +37,6 @@
             </ul>
         </section>
 
-        <!-- Scenarios Section -->
         <section id="scenarios">
             <h2>Scenarios</h2>
             <p>These questions represent the target audience (tourists, hikers, families, photographers) and drive the content strategy:</p>
@@ -48,12 +47,11 @@
             </ul>
         </section>
 
-        <!-- Color Schema Section -->
         <section id="color-schema">
             <h2>Color Schema</h2>
             <p>The following colors have been carefully selected to evoke the natural beauty of the Grand Canyon while ensuring readability and accessibility:</p>
             
-            <div style="margin: 20px 0;">
+            <div class="color-swatches">
                 <div class="color-swatch color-primary"><span>#1B4965<br>Primary</span></div>
                 <div class="color-swatch color-secondary"><span>#FF6B35<br>Secondary</span></div>
                 <div class="color-swatch color-background"><span>#F8F9FA<br>Background</span></div>
@@ -61,37 +59,34 @@
             </div>
 
             <h3>Color Usage:</h3>
-            <ul style="margin-left: 20px;">
-                <li><strong style="color: #1B4965;">Deep Blue (#1B4965):</strong> Used for all headings (h1, h2, h3), navigation backgrounds, footer borders, and primary buttons. Represents the Colorado River and sky.</li>
-                <li><strong style="color: #FF6B35;">Coral Orange (#FF6B35):</strong> Used for accent borders, call-to-action buttons, links on hover, and highlight boxes. Represents canyon rock formations and sunset colors.</li>
-                <li><strong style="color: #2C3E50;">Dark Slate (#2C3E50):</strong> Used for all body text and paragraph content. Ensures high contrast and readability.</li>
-                <li><strong style="color: #666;">Light Gray (#F8F9FA):</strong> Used for the page background to reduce eye strain and provide subtle contrast with content cards.</li>
+            <ul class="color-usage-list">
+                <li><strong class="color-primary-text">Deep Blue (#1B4965):</strong> Used for all headings (h1, h2, h3), navigation backgrounds, footer borders, and primary buttons. Represents the Colorado River and sky.</li>
+                <li><strong class="color-secondary-text">Coral Orange (#FF6B35):</strong> Used for accent borders, call-to-action buttons, links on hover, and highlight boxes. Represents canyon rock formations and sunset colors.</li>
+                <li><strong class="color-text-text">Dark Slate (#2C3E50):</strong> Used for all body text and paragraph content. Ensures high contrast and readability.</li>
+                <li><strong class="color-background-text">Light Gray (#F8F9FA):</strong> Used for the page background to reduce eye strain and provide subtle contrast with content cards.</li>
             </ul>
         </section>
 
-        <!-- Typography Section -->
         <section id="typography">
             <h2>Typography</h2>
             <p>Two complementary fonts have been selected to create visual hierarchy and readability:</p>
             
             <div class="font-sample">
                 <p class="font-merriweather"><strong>Merriweather (Serif)</strong> - Used for all headings (h1, h2, h3)</p>
-                <p style="font-size: 0.9rem; margin-top: 5px;">A classic, readable serif font that conveys trustworthiness and elegance. Applied to page titles and section headings.</p>
+                <p>A classic, readable serif font that conveys trustworthiness and elegance. Applied to page titles and section headings.</p>
             </div>
 
             <div class="font-sample">
                 <p class="font-opensans"><strong>Open Sans (Sans-Serif)</strong> - Used for body text, paragraphs, navigation, and UI elements</p>
-                <p style="font-size: 0.9rem; margin-top: 5px;">A clean, modern sans-serif font optimized for web readability. Applied to all body content, lists, and navigation menus.</p>
+                <p>A clean, modern sans-serif font optimized for web readability. Applied to all body content, lists, and navigation menus.</p>
             </div>
         </section>
 
-        <!-- Wireframes Section -->
         <section id="wireframes">
             <h2>Wireframes</h2>
             <p>Below are the layout wireframes for the Grand Canyon Adventures homepage in both mobile and desktop views:</p>
             
             <div class="wireframe-container">
-                <!-- Mobile Wireframe -->
                 <div>
                     <div class="wireframe-label">Mobile View (320px - 480px)</div>
                     <div class="wireframe wireframe-mobile">
@@ -107,7 +102,6 @@
                     </div>
                 </div>
 
-                <!-- Desktop Wireframe -->
                 <div>
                     <div class="wireframe-label">Desktop View (1024px+)</div>
                     <div class="wireframe wireframe-desktop">
@@ -123,7 +117,7 @@
             </div>
         </section>
 
-        <footer>
+        <footer class="site-footer">
             <p>Grand Canyon Adventures | Site Plan Document</p>
             <p>WDD 131 - Dynamic Web Fundamentals</p>
         </footer>

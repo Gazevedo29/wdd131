@@ -295,3 +295,24 @@
             color: var(--primary-color);
             font-size: 0.9rem;
         }
+/* Color text classes for color scheme section */
+.color-primary-text {
+    color: #1B4965;
+}
+
+.color-secondary-text {
+    color: #FF6B35;
+}
+
+.color-text-text {
+    color: #2C3E50;
+}
+
+.color-background-text {
+    color: #666;
+}
+
+/* Color swatches container */
+.color-swatches {
+    margin: 20px 0;
+}
