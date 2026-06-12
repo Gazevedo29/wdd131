@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Product Review Form
+    </title>
+    <meta name="description" content="Gerson A. Azevedo - WDD 131 Dynamic Web Fundamentals. Personal page with web development resources and background from Beira, Mozambique.">
+    <meta name="author" content="Gerson A. Azevedo">
+
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/form.css">
+
+    <!--JavaScript-->
+    <script src="scripts/form.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a product</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <!-- Star Rating -->
+            <fieldset class="star-rating">
+                <legend>overall rating </legend>
+                <div class="stars">
+                    
+                    <label for="rating1">☆<br>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </label>
+                    <label for="rating2">☆☆<br>
+                        <input type="radio" id="rating2" name="rating" value="2">
+                    </label>
+                    <label for="rating3">☆☆☆<br>
+                        <input type="radio" id="rating3" name="rating" value="3">
+                    </label>
+                    <label for="rating4">☆☆☆☆<br>
+                        <input type="radio" id="rating4" name="rating" value="4">
+                    </label>
+                    <label for="rating5">☆☆☆☆☆<br>
+                        <input type="radio" id="rating5" name="rating" value="5">
+                    </label>
+                </div>
+            </fieldset>
+
+            
+
+            <!-- 3. Data de Instalação -->
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- 4. Funcionalidades Úteis (Checkboxes) -->
+            <fieldset>
+                <legend>Which features did you find useful in the product?<br><em>(Check all that apply)</em></legend>
+                <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" id="easeOfUse" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+            </fieldset>
+
+            <!-- 5. Avaliação Escrita (Opcional) -->
+            <label for="review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="review" name="review" rows="4"></textarea>
+
+            <!-- 6. Nome do Usuário (Opcional) -->
+            <label for="username">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="username" name="username">
+
+            <!-- Botão de Envio -->
+            <input type="submit" value="Post Review">
+
+
+        </form>
+
+            
+    </main>
+
+
+    <footer>
+        <p>
+            ©<span id="currentyear"></span>🎧Gerson de Alcina Azevedo🎧Mozambique
+        </p>
+         <p id="lastModified"></p>
+    </footer>
+
+    
+
+</body>
+</html>
