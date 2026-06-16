@@ -1,0 +1,273 @@
+/* ========== VARIÁVEIS DE COR (consistente com trabalhos anteriores) ========== */
+:root {
+    --primary-color: #1a5276;
+    --nav-bg: #333333;
+    --text-color: #333333;
+    --white: #ffffff;
+    --card-border: #cccccc;
+    --link-color: #0000ee;
+    --background-color: #f5f5f5;
+    --form-bg: #e8e8e8;
+    --input-bg: #ffffff;
+    --optional-color: #1a5276;
+}
+
+/* ========== RESET E BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* ========== MAIN E FORMULÁRIO ========== */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: var(--form-bg);
+    padding: 2rem;
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== LABELS ========== */
+label {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+/* ========== CAMPOS DE INPUT ========== */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--card-border);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* ========== FIELDSETS ========== */
+fieldset {
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/* ========== RATING (ESTRELAS) ========== */
+.rating {
+    margin-top: 1.5rem;
+}
+
+.rating legend {
+    margin-bottom: 0.8rem;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.stars label {
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-top: 0;
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
+.stars input[type="radio"] {
+    margin-top: 0.5rem;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary-color);
+}
+
+/* ========== CHECKBOXES ========== */
+fieldset label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+fieldset input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--primary-color);
+}
+
+/* ========== TEXTO OPCIONAL ========== */
+.optional {
+    color: var(--optional-color);
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+/* ========== BOTÃO DE SUBMIT ========== */
+input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #144a6b;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* ========== PÁGINA DE CONFIRMAÇÃO ========== */
+.confirmation {
+    background-color: var(--form-bg);
+    padding: 3rem 2rem;
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation h2 {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 30px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    left: -20px;
+}
+
+.confirmation p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#reviewCount {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    color: #ffff00;
+    font-size: 1rem;
+}
+
+/* ========== RESPONSIVO ========== */
+@media screen and (max-width: 480px) {
+    .stars {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    .confirmation {
+        padding: 2rem 1rem;
+    }
+
+    .confirmation h2 {
+        left: -10px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    main {
+        max-width: 700px;
+    }
+}
