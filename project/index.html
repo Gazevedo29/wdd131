@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...descrição do site...">
+    <meta name="author" content="Gerson Azevedo">
+    <title>Grand Canyon Adventures - Home</title>
+    
+    <!-- Google Fonts do seu site plan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- HEADER com navegação -->
+    <header>
+        <div class="logo">🏔️ Grand Canyon Adventures</div>
+        <button class="hamburger" id="hamburgerBtn">☰</button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="plan.html">Plan Your Trip</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover the Grand Canyon</h1>
+                <p>Your ultimate guide to trails, viewpoints, and unforgettable adventures at one of the world's most magnificent natural wonders.</p>
+                <a href="trails.html" class="btn-primary">Explore Trails</a>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <h2>Why Visit the Grand Canyon?</h2>
+            <div class="cards-container">
+                <article class="feature-card">
+                    <div class="card-icon">🥾</div>
+                    <h3>World-Class Hiking</h3>
+                    <p>From easy rim walks to challenging descents, the Grand Canyon offers trails for every skill level. The Bright Angel Trail provides water and shade, while the South Kaibab offers stunning panoramic views.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="card-icon">📸</div>
+                    <h3>Breathtaking Photography</h3>
+                    <p>Capture sunrise at Mather Point, sunset at Hopi Point, or the Milky Way from this International Dark Sky Park. Every viewpoint tells a different story.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="card-icon">🏕️</div>
+                    <h3>Camping & Lodging</h3>
+                    <p>Stay inside the park at Bright Angel Lodge or camp under the stars. Book well in advance as accommodations fill up quickly year-round.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="weather-section">
+            <h2>Current Weather & Seasonal Tips</h2>
+            <div class="weather-container">
+                <div class="weather-card" id="weatherCard">
+                    <div class="weather-header">
+                        <h3>South Rim Conditions</h3>
+                        <span class="weather-date" id="weatherDate"></span>
+                    </div>
+                    <div class="weather-body">
+                        <div class="weather-temp">
+                            <span class="temp-value" id="tempValue">72°F</span>
+                            <span class="temp-condition" id="tempCondition">Sunny</span>
+                        </div>
+                        <div class="weather-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Elevation:</span>
+                                <span class="detail-value">7,000 ft</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Best Season:</span>
+                                <span class="detail-value" id="bestSeason">Spring/Fall</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Crowd Level:</span>
+                                <span class="detail-value" id="crowdLevel">Moderate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="season-tips">
+                    <h3>Seasonal Recommendations</h3>
+                    <div class="season-buttons">
+                        <button class="season-btn active" data-season="spring">Spring</button>
+                        <button class="season-btn" data-season="summer">Summer</button>
+                        <button class="season-btn" data-season="fall">Fall</button>
+                        <button class="season-btn" data-season="winter">Winter</button>
+                    </div>
+                    <div class="season-content" id="seasonContent">
+                        <p><strong>Spring (March-May):</strong> Ideal weather with temperatures between 50-80°F. Wildflowers bloom along the rim. Water sources are reliable. Book lodging 6+ months ahead.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Gallery Preview</h2>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=400&h=300&fit=crop" alt="Mather Point sunrise view of Grand Canyon" loading="lazy">
+                    <figcaption>Mather Point at Sunrise</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1548586196-aa5803b77379?w=400&h=300&fit=crop" alt="Bright Angel Trail winding through canyon" loading="lazy">
+                    <figcaption>Bright Angel Trail</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Colorado River view from South Rim" loading="lazy">
+                    <figcaption>Colorado River Vista</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1527489377706-5bf97e608852?w=400&h=300&fit=crop" alt="Grand Canyon sunset colors" loading="lazy">
+                    <figcaption>Hopi Point Sunset</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="quick-facts">
+            <h2>Quick Facts</h2>
+            <div class="facts-grid" id="factsGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER com link para referências -->
+    <footer>
+        <p>Copyright © 2026 Grand Canyon Adventures | Gerson Azevedo | WDD 131</p>
+        <p><a href="references.html">View References</a></p>
+    </footer>
+
+    <!-- JavaScript no final do body -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

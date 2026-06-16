@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...descrição do site...">
+    <meta name="author" content="Gerson Azevedo">
+    <title>Trails - Grand Canyon Adventures</title>
+    
+    <!-- Google Fonts do seu site plan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- HEADER com navegação -->
+    <header>
+        <div class="logo">🏔️ Grand Canyon Adventures</div>
+        <button class="hamburger" id="hamburgerBtn">☰</button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="plan.html">Plan Your Trip</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>South Rim Hiking Trails</h1>
+            <p>Discover trails ranging from easy rim walks to challenging descents into the canyon. All trails offer unforgettable views.</p>
+        </section>
+
+        <section class="trail-filters">
+            <h2>Filter by Difficulty</h2>
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-filter="all">All Trails</button>
+                <button class="filter-btn" data-filter="easy">Easy</button>
+                <button class="filter-btn" data-filter="moderate">Moderate</button>
+                <button class="filter-btn" data-filter="hard">Hard</button>
+            </div>
+        </section>
+
+        <section class="trails-list" id="trailsList">
+             <h2>Available Trails</h2>
+            <!-- Trails populated by JavaScript -->
+        </section>
+
+        <section class="safety-section">
+            <h2>⚠️ Safety First</h2>
+            <div class="safety-cards">
+                <article class="safety-card">
+                    <h3>Bring Enough Water</h3>
+                    <p>Carry at least 1 gallon per person per day. Dehydration is the leading cause of rescue operations.</p>
+                </article>
+                <article class="safety-card">
+                    <h3>Know Your Limits</h3>
+                    <p>Every trail into the canyon is steep. What goes down must come back up. Allow twice as much time for the return trip.</p>
+                </article>
+                <article class="safety-card">
+                    <h3>Check Weather</h3>
+                    <p>Summer temperatures at the river exceed 100°F. Winter brings ice and snow on upper trails. Always check conditions before hiking.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="viewpoints-section">
+            <h2>Best Photography Viewpoints</h2>
+            <div class="viewpoints-grid" id="viewpointsGrid">
+                <!-- Viewpoints populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER com link para referências -->
+    <footer>
+        <p>Copyright © 2026 Grand Canyon Adventures | Gerson Azevedo | WDD 131</p>
+        <p><a href="references.html">View References</a></p>
+    </footer>
+
+    <!-- JavaScript no final do body -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
